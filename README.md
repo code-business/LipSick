@@ -6,7 +6,7 @@
 
 ## Introduction
 
-#### To get started with LipSick on Windows, follow these steps to set up your environment. This branch has been tested with Anaconda using Python 3.10 and CUDA 11.6 with only 4GB VRAM. Using a different Cuda version can cause speed issues.
+#### To get started with LipSick on Windows, follow these steps to set up your environment. This branch has been tested with Anaconda using Python 3.10 and CUDA 11.6 & CUDA 11.8 with only 4GB VRAM. Using a different Cuda version can cause speed issues.
 See branches for [Linux](https://github.com/Inferencer/LipSick/tree/linux) or HuggingFace [GPU](https://github.com/Inferencer/LipSick/tree/HuggingFace-GPU) / [CPU](https://github.com/Inferencer/LipSick/tree/HuggingFace-CPU) or [Collab](https://github.com/Inferencer/LipSick/tree/Google-Collab)
 
 ## Setup
@@ -76,9 +76,7 @@ This will launch a Gradio interface where you can upload your video and audio fi
 
 - [ ] Add support MacOS.
 - [ ] Add upscale reference frames with masking. 
-- [ ] Add seamless clone masking to remove the common bounding box around mouths. 🤕
 - [ ] Add alternative option for face tracking model [SFD](https://github.com/1adrianb/face-alignment) (likely best results, but slower than Dlib).
-- [ ] Add visualization for custom ref frames & print correct values
 - [ ] Examine CPU speed upgrades.
 - [ ] Reintroduce persistent folders for frame extraction as an option with existing frame checks for faster extraction on commonly used videos. 😷
 - [ ] Provide HuggingFace space CPU (free usage but slower). 😷
@@ -89,7 +87,12 @@ This will launch a Gradio interface where you can upload your video and audio fi
 - [ ] Remove input video 25fps requirement.
 - [ ] Upload cherry picked input footage for user download & use.
 - [ ] Create a Discord to share results, faster help, suggestions & cherry picked input footage.
+- [ ] Multi face Lipsync on large scene scene changes/ cut scenes
+- [ ] Mutli face Lipsync support on 1+ person in video.
+- [ ] skipable frames when no face it detected.
 - [ ] Close mouth fully on silence
+- [x] Add visualization for custom ref frames & print correct values 🤮
+- [x] Add auto masking to remove the common bounding box around mouths. 🤢
 - [x] Provide Google Colab .IPYNB. 🤮
 - [x] Add support for Linux. 🤢
 - [x] Looped original video generated as an option for faster manual masking. 🤮
